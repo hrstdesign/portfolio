@@ -1,0 +1,19 @@
+body {
+	background: black;
+	font-size: 2vw;
+}
+
+#logos {
+	text-align: center;
+}
+
+img {
+	width: 18vw;
+	height: 18vw;
+	margin: 0.5vw;
+	vertical-align: middle;
+}
+
+a {
+	outline: none;
+}

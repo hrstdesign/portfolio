@@ -1,0 +1,260 @@
+body {
+	background-color: black;
+	font-family: Roboto;
+	margin: 0;
+}
+
+/*NAVIGATION*/
+ul {
+	list-style-type: none;
+	position: fixed;
+	top: -1.6vw;
+	right: 1vw;
+	font-weight: 900;
+	z-index: 100;
+}
+
+nav ul li {
+	padding: 1.7vw;
+	font-size: 1.5vw;	
+	display: inline-block;
+	visibility: hidden;
+	text-transform: uppercase;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+nav ul li a:hover {
+	color: yellow;
+}
+
+#smallLogo {
+	max-width: 3%;
+	position: fixed;
+	top: 0.3vw;
+	left: 1.7vw;
+	visibility: hidden;
+	z-index: 100;
+}
+
+#menuIcon {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 96%;
+	color: yellow;
+}
+
+#menuIcon:before {
+	font-size: 4vw;
+}
+/*END NAVIGATION*/
+
+.backMountains, #mountain1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%; 
+	height: auto; 
+	z-index: -100;
+}
+
+#mountain1 {
+	top: 20.5vw;
+}
+
+#logo {
+	max-width: 8%;
+	display: block;
+	margin: 2.8% auto;
+}
+
+h1, h2, #socialMediaIcons {
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-size: 10vw;
+	margin-top: -2%;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 3vw;
+	margin-top: -5.8%;
+	font-weight: normal;
+}
+
+.colorChange {
+	animation: colorchange 21s infinite;
+}
+
+.social {
+	margin-top: 4%;
+	margin-left: 1%;
+	color: white;
+	position: relative;
+	top: 0;
+	transition: all 0.2s;
+}
+
+.social:before {
+	font-size: 3vw;
+}
+
+.social:hover {
+	position: relative;
+	top: -8px;
+	color: yellow;
+}
+
+#scrollDownIcon {
+	max-width: 3%;
+	display: block;
+	margin: 8% auto;
+}
+
+#scrollDownIcon:hover {
+	cursor: pointer;
+}
+
+#aboutSection, #workSection, #contactSection{
+	position: relative;
+}
+
+#aboutBackgroundImage, #workBackgroundImage, #contactBackgroundImage {
+	max-width: 100%;
+}
+
+#aboutText, #workText, #contactText {
+	color: white;
+	font-size: 6vw;
+	font-weight: 900;
+	position: absolute;
+	top: 10vw;
+	left: 4vw;
+}
+
+#aboutParagraph1, #aboutParagraph2 {
+	color: white;
+	position: absolute;
+	left: 4vw;
+	font-size: 1.8vw;
+	max-width: 55%;
+	text-align: justify;
+	visibility: hidden;
+}
+
+#aboutParagraph1 {
+	top: 17vw;
+}
+
+#aboutParagraph2 {
+	top: 26vw;
+}
+
+#signature {
+	width: 13vw;
+	position: absolute;
+	top: 38vw;
+	left: 45vw;
+	visibility: hidden;
+}
+
+#logoButton, #webButton, #otherButton {
+	position: absolute;
+	top: 27vw;
+	width: 20vw;
+	height: 6vw;
+	font-size: 1.6vw;
+	font-weight: 900;
+	background: yellow;
+	color: black;
+	border: none;
+	outline: none;
+	visibility: hidden;
+}
+
+#logoButton:hover, #webButton:hover, #otherButton:hover {
+	color: yellow;
+	background: black;
+	cursor: pointer;
+}
+
+#logoButton {
+	left: 10%;
+	transform: translateX(-10%);
+}
+
+#webButton {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#otherButton {
+	left: 90%;
+	transform: translateX(-90%);
+}
+
+#logoBackground, #webBackground, #otherBackground {
+	position: absolute;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	display: none;
+}
+
+form {
+	position: absolute;
+	top: 21vw;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+input, textarea {
+	box-sizing: border-box;
+	width: 30vw;
+	margin: 0.5vw;
+	border: 1px solid white;
+	outline: none;
+	background: black;
+	color: yellow;
+	font-size: 1vw;
+}
+
+input {
+	height: 1.5vw;
+}
+
+textarea {
+	height: 20vw;
+}
+
+
+@keyframes colorchange {
+	0% {color: yellow;}
+	7% {color: yellow;}
+	12.5% {color: #ff0000;}
+	25% {color: #f54196;}
+	37.5% {color: #b05ecf;}
+	50% {color: #6761df;}
+	62.5% {color: #599dd1;}
+	75% {color: #59d197;}
+	87.5% {color: #a0d64c;}
+	90% {color: #fdb323;}
+	100% {color: yellow;}
+}
+
+@media screen and (max-width: 768px) {
+	#menuIcon {
+		visibility: visible;
+	}
+	/*Make it after we finish the website. */
+}
+

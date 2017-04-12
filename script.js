@@ -29,9 +29,9 @@ $(document).ready(function(){
 		scrollFromTop = $(document).scrollTop();
 		mountainEffect();
 		showTheNavbar();
-		showAnimations("#aboutParagraph1", "fadeInUpBig", 2);
-		showAnimations("#aboutParagraph2", "fadeInUpBig", 2);
-		showAnimations("#signature", "fadeInUpBig", 2);
+		showAnimations("#aboutParagraph1", "fadeIn", 2);
+		showAnimations("#aboutParagraph2", "fadeIn", 2);
+		showAnimations("#signature", "fadeIn", 2);
 		showAnimations("#logoButton", "fadeIn", 1.45);
 		showAnimations("#webButton", "fadeIn", 1.45);
 		showAnimations("#otherButton", "fadeIn", 1.45);

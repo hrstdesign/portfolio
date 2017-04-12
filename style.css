@@ -239,6 +239,13 @@ textarea {
 	height: 20vw;
 }
 
+#footer {
+	color: white;
+	float: right;
+	font-size: 1vw;
+	margin: 0.2vw;
+}
+
 
 @keyframes colorchange {
 	0% {color: yellow;}

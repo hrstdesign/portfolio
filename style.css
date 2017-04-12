@@ -125,9 +125,11 @@ h2 {
 
 #aboutSection, #workSection, #contactSection{
 	position: relative;
+	max-width: 100%;
+	height: 55vw;
 }
 
-#aboutBackgroundImage, #workBackgroundImage, #contactBackgroundImage {
+#aboutBackgroundImage {
 	max-width: 100%;
 }
 

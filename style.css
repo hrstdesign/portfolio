@@ -262,9 +262,32 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
-	#menuIcon {
+	#aboutParagraph1, #aboutParagraph2, #signature, #logoButton, #webButton, #otherButton {
 		visibility: visible;
 	}
-	/*Make it after we finish the website. */
+
+	#scrollDownIcon {
+		visibility: hidden;
+	} 
+
+	#logoButton, #webButton, #otherButton {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 30vw;
+	}
+
+	#logoButton {
+		top: 23vw;
+	}
+
+	#webButton {
+		top: 33vw;
+	}	
+
+	#otherButton {
+		top: 43vw;
+	}
+
+
 }
 

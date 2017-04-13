@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	if($(window).width() > 768) {
+
 	//Create vars. 
 	var scrollFromTop;
 	var spaceForMountain;
@@ -29,12 +31,12 @@ $(document).ready(function(){
 		scrollFromTop = $(document).scrollTop();
 		mountainEffect();
 		showTheNavbar();
-		showAnimations("#aboutParagraph1", "fadeIn", 2);
-		showAnimations("#aboutParagraph2", "fadeIn", 2);
-		showAnimations("#signature", "fadeIn", 2);
-		showAnimations("#logoButton", "fadeIn", 1.45);
-		showAnimations("#webButton", "fadeIn", 1.45);
-		showAnimations("#otherButton", "fadeIn", 1.45);
+		showAnimations("#aboutParagraph1", 2);
+		showAnimations("#aboutParagraph2", 2);
+		showAnimations("#signature", 2);
+		showAnimations("#logoButton", 1.45);
+		showAnimations("#webButton", 1.45);
+		showAnimations("#otherButton", 1.45);
 	});
 
 	// Work Section BG change. 
@@ -84,11 +86,11 @@ $(document).ready(function(){
 		});
 	}
 
-	function showAnimations(element, animation, howSoon) {
+	function showAnimations(element, howSoon) {
 		var offset = $(element).offset().top / howSoon;
 		if (scrollFromTop >= offset) {
 			$(element).css("visibility", "visible");
-			$(element).addClass("animated" + " " + animation);
+			$(element).addClass("animated fadeIn");
 		}
 	}
 
@@ -113,6 +115,8 @@ $(document).ready(function(){
 			$(this).css("visibility", "hidden");
 		});
 	}
+
+	};	
 
 });
 

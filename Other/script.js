@@ -10,7 +10,12 @@ $(document).ready(function(){
 		mainClass: 'animated zoomIn',
 		image: {
 			titleSrc: function(item) {
-				return item.class;
+				var title = item.el.attr('class')
+				if(title != "null") {
+					return title;
+				} else {
+					return "";
+				};
 			},
 			cursor: 'default'
 		}
@@ -19,12 +24,12 @@ $(document).ready(function(){
 
 function getLogos() {
 	$.ajax({
-		url: "https://api.imgur.com/3/album/Fn8rh/images",
+		url: "https://api.imgur.com/3/album/yQF1h/images",
 		headers: {"Authorization": "Client-ID e47ec6bd83f70c9"}
 	}).done(function(obj){
 		$.each(obj.data, function(i, item){
 			var full = [];
-			full.push("<a href='" + item.link + "'>" + "<img src='" + item.link + "' class='" + item.description + "'></a>");
+			full.push("<a href='" + item.link + "' " + "class='" + item.description + "'>" + "<img src='" + item.link + "'></a>");
 			$(full.join()).appendTo("#logos");
 		});
 	});

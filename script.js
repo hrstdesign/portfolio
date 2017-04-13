@@ -73,7 +73,7 @@ $(document).ready(function(){
 	}
 
 	function scrollAnimation(scrollTo) {
-		$("body").animate({
+		$("body, html").animate({
 			scrollTop: $(scrollTo).offset().top
 		}, 800);
 	}

@@ -223,30 +223,49 @@ form {
 
 input, textarea {
 	box-sizing: border-box;
-	width: 30vw;
-	margin: 0.5vw;
-	border: 1px solid white;
-	outline: none;
 	background: black;
 	color: yellow;
+	outline: none;
+	border: 1px solid yellow;
+	margin: 0.4vw;
 	font-size: 1vw;
-}
+}	
 
 input {
-	height: 1.5vw;
+	width: 23.5vw;
+	height: 2vw;
+} 
+
+textarea, input{
+	padding-left: 0.4vw;
+}
+
+input[name="subject"], input[type="submit"], textarea {
+	width: 48vw;
 }
 
 textarea {
-	height: 20vw;
+	height: 10vw;
+}
+
+input[type="submit"] {
+	color: black;
+	background: yellow;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
 }
 
 #footer {
+	position: absolute;
+	bottom: 0.5%;
+	left: 50%;
+	transform: translateX(-50%);
 	color: white;
 	font-size: 0.8vw;
-	text-align: center;
-	margin-bottom: 0.4vw;
 }
-
 
 @keyframes colorchange {
 	0% {color: yellow;}
@@ -289,6 +308,17 @@ textarea {
 		top: 43vw;
 	}
 
+	input, textarea {
+		margin: 0.1vw;
+	}
+
+	input[name="subject"] {
+		visibility: hidden;
+	}
+
+	#footer {
+		left: 90%;
+	}
 
 }
 

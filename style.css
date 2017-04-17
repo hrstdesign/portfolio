@@ -214,44 +214,56 @@ h2 {
 	display: none;
 }
 
-form {
-	position: absolute;
-	top: 21vw;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
 input, textarea {
 	box-sizing: border-box;
 	background: black;
 	color: yellow;
 	outline: none;
 	border: 1px solid yellow;
-	margin: 0.4vw;
 	font-size: 1vw;
+	padding-left: 0.4vw;
 }	
 
 input {
-	width: 23.5vw;
+	width: 23.5%;
 	height: 2vw;
 } 
 
-textarea, input{
-	padding-left: 0.4vw;
+textarea {
+	height: 10vw;
+	top: 28vw;
+}
+
+input[name="name"], input[name="email"] {
+	position: absolute;
+	top: 22vw;
+	width: 24.5%;
+}
+
+input[name="name"] {
+	left: 24.8%;
+}
+
+input[name="email"] {
+	right: 24.8%;
 }
 
 input[name="subject"], input[type="submit"], textarea {
-	width: 48vw;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50.5%;
 }
 
-textarea {
-	height: 10vw;
+input[name="subject"] {
+	top: 25vw;
 }
 
 input[type="submit"] {
 	color: black;
 	background: yellow;
 	text-transform: uppercase;
+	top: 39vw;
 }
 
 input[type="submit"]:hover {
@@ -306,18 +318,6 @@ input[type="submit"]:hover {
 
 	#otherButton {
 		top: 43vw;
-	}
-
-	input, textarea {
-		margin: 0.1vw;
-	}
-
-	input[name="subject"] {
-		visibility: hidden;
-	}
-
-	#footer {
-		left: 90%;
 	}
 
 }
